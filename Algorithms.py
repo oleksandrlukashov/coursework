@@ -1,6 +1,5 @@
 from copy import copy
 from abc import ABC
-import random
 import time
 import JsonExport
 
@@ -60,21 +59,6 @@ class InsertionSort(Sort):
             self._arr_to_be_sorted[j + 1] = key
 
 
-class BogoSort(Sort):
-    @Sort._time_print
-    def sort(self):
-        self.name = 'bogosort'
-        is_sorted = False
-        while not is_sorted:
-            random.shuffle(self._arr_to_be_sorted)
-            last_item = self._arr_to_be_sorted[0]
-            is_sorted = True
-            for item in self._arr_to_be_sorted:
-                if last_item > item:
-                    is_sorted = False
-                last_item = item
-
-
 class BuiltinSort(Sort):
     @Sort._time_print
     def sort(self):
@@ -101,39 +85,6 @@ class BubbleSort(Sort):
                     temp = self._arr_to_be_sorted[j]
                     self._arr_to_be_sorted[j] = self._arr_to_be_sorted[j + 1]
                     self._arr_to_be_sorted[j + 1] = temp
-
-
-class MergeSort(Sort):
-    @Sort._time_print
-    def __merge_sort_(self, nlist):
-        if len(nlist) > 1:
-            divide_point = len(nlist) // 2
-            subarray_left = nlist[:divide_point]
-            subarray_right = nlist[divide_point:]
-            self.__merge_sort_(subarray_left)
-            self.__merge_sort_(subarray_right)
-            i = j = k = 0
-            while i < len(subarray_left) and j < len(subarray_right):
-                if subarray_left[i] < subarray_right[j]:
-                    nlist[k] = subarray_left[i]
-                    i = i + 1
-                else:
-                    nlist[k] = subarray_right[j]
-                    j = j + 1
-                k = k + 1
-            while i < len(subarray_left):
-                nlist[k] = subarray_left[i]
-                i = i + 1
-                k = k + 1
-            while j < len(subarray_right):
-                nlist[k] = subarray_right[j]
-                j = j + 1
-                k = k + 1
-
-    @Sort._time_print
-    def sort(self):
-        self.name = 'merge sort'
-        self.__merge_sort_(self._arr_to_be_sorted)
 
 
 class QuickSort(Sort):
