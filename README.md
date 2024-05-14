@@ -36,10 +36,10 @@ from SortAlgorithms import ExportJson
 export_json = ExportJson()
 export_json.add_record('bubble sort', 0.005)
 ```
-![Screenshot1] (https://github.com/oleksandrlukashov/coursework/blob/main/screenshot1.png) 
-![Screenshot2] (https://github.com/oleksandrlukashov/coursework/blob/main/screenshot2.png)
-![Screenshot3] (https://github.com/oleksandrlukashov/coursework/blob/main/screenshot3.png)
-![Screenshot4] (https://github.com/oleksandrlukashov/coursework/blob/main/screenshot4.png)
+![alt text](https://github.com/oleksandrlukashov/coursework/blob/main/screenshot1.png) 
+![alt text](https://github.com/oleksandrlukashov/coursework/blob/main/screenshot2.png)
+![alt text](https://github.com/oleksandrlukashov/coursework/blob/main/screenshot3.png)
+![alt text](https://github.com/oleksandrlukashov/coursework/blob/main/screenshot4.png)
 
 ### 4. Future Prospects
 
