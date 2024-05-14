@@ -37,7 +37,9 @@ export_json = ExportJson()
 export_json.add_record('bubble sort', 0.005)
 ```
 ![alt text](https://github.com/oleksandrlukashov/coursework/blob/main/screenshot1.png) 
+Example of a graph that my application builds for an array of size 10
 ![alt text](https://github.com/oleksandrlukashov/coursework/blob/main/screenshot2.png)
+Example of a graph that my application builds for an array of size 50
 ![alt text](https://github.com/oleksandrlukashov/coursework/blob/main/screenshot3.png)
 ![alt text](https://github.com/oleksandrlukashov/coursework/blob/main/screenshot4.png)
 
